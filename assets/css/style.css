@@ -30,6 +30,11 @@ body {
     font-size: 40px;
 }
 
+.text-mysize {
+    font-size: 16px;
+    text-shadow: 1px 0 0 rgb(7, 7, 7);
+}
+
 .endGame {
     font-size: 32px;
     color: rgb(213, 228, 11);
@@ -39,10 +44,5 @@ body {
 .guess {
     font-size: 18px;
     color: rgb(237, 240, 59);
-    text-shadow: 1px 0 0 rgb(7, 7, 7);
-}
-
-.text-mysize {
-    font-size: 16px;
     text-shadow: 1px 0 0 rgb(7, 7, 7);
 }
