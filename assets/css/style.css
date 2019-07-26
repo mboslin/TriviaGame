@@ -1,0 +1,48 @@
+
+
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: rgb(55, 212, 7);
+    text-align: left;
+    font-family: Arial, Helvetica, "sans-serif";
+    text-shadow: 1px 0 0 rgb(7, 7, 7);
+}
+
+.cover-heading {
+    margin-top: 25px;
+    font-size: 70px;
+}
+
+#game-start {
+    margin-top: 70px;
+    font-size: 40px;
+}
+
+#countdown {
+    font-size: 26px;
+    color: rgb(233, 23, 23);
+    text-shadow: 1px 0 0 rgb(7, 7, 7);
+}
+
+#game-done {
+    font-size: 40px;
+}
+
+.endGame {
+    font-size: 32px;
+    color: rgb(213, 228, 11);
+    text-shadow: 1px 0 0 rgb(7, 7, 7);
+}
+
+.guess {
+    font-size: 18px;
+    color: rgb(237, 240, 59);
+    text-shadow: 1px 0 0 rgb(7, 7, 7);
+}
+
+.text-mysize {
+    font-size: 16px;
+    text-shadow: 1px 0 0 rgb(7, 7, 7);
+}

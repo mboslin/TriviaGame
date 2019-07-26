@@ -1,0 +1,189 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trivia Game</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+</head>
+
+<body class="text-center">
+
+  <div class="mainContainer">
+
+    <!-- The First/Reload Screen with the Start Button. -->
+    <main role="main" class="inner cover">
+      <h1 class="cover-heading">Totally Trivial Trivia!</h1>
+      <p class="lead btn btn-lg btn-danger" id="game-start">Start</p>
+      <div class="col-lg-4 col-lg-offset-4 text-center">
+        <p id="countdown">Time Remaining:<span id="timer"></span></p>
+      </div>
+    </main>
+
+    <!-- Trivia Questions to be answered by the user. -->
+    <div class="trivia-ques text-center">
+      <p class="guess">1. Winterfell is the home of which family?</p>
+      <form class="question">
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="correct"> Stark
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Tully
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Baratheon
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Tarly
+        </label>
+      </form>
+
+      <p class="guess">2. The warrior eunuchs are known as the:?</p>
+      <form class="question">
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Septons
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Khaleesi
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Varys
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="correct"> Unsullied
+        </label>
+      </form>
+
+      <p class="guess">3. Jon Snow was born to:?</p>
+      <form class="question">
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Joanna Lannister
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="correct"> Lyanna Stark
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Catelyn Stark
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Melisandre
+        </label>
+      </form>
+
+      <p class="guess">4. "The Mad King" was:?</p>
+      <form class="question">
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Rhaegar Targaryen
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> King Joffrey
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="correct"> Aerys II
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Robert Baratheon
+        </label>
+      </form>
+
+      <p class="guess">5. Tyrion killed which former lover after she betrayed him at his trial?</p>
+      <form class="question">
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Sansa
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="correct"> Shae
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Cersei
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Arya
+        </label>
+      </form>
+
+      <p class="guess">6. Theon Greyjoy was given a new name by Ramsay Bolton. What was it?</p>
+      <form class="question">
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Freak
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Creep
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Leak
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="correct"> Reek
+        </label>
+      </form>
+
+      <p class="guess">7. Who died at The Purple Wedding?</p>
+      <form class="question">
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="correct"> King Joffrey
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Renly Baratheon
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Catelyn Stark
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> Walder Frey
+        </label>
+      </form>
+
+      <p class="guess">8. The Iron Throne was made for:?</p>
+      <form class="question">
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> King Joffrey
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="correct"> King Aegon
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> King Aerys II
+        </label>
+        <label class="form-check form-check-inline text-mysize">
+          <input type="radio" name="optradio" class="optradio" value="wrong"> King Robert Baratheon
+        </label>
+      </form>
+
+      <!-- Done Button for user to execute, ending countdown timer. -->
+      <div>
+        <p class="lead btn btn-lg btn-danger" id="game-done">Done
+        </p>
+      </div>
+    </div>
+
+    <!-- Last page of site, shows Results for end user. -->
+    <div class="results">
+      <p class="endGame" id="summary">Great Job!! <br>Jon Snow would be PROUD!!</p>
+      <p class="endGame" id="correctScore">Correct Answers:</p>
+      <p class="endGame" id="wrongScore"></p>
+      <p class="endGame" id="unanswered"></p>
+    </div>
+
+  </div>
+  <!--Div class=mainContainer/Questions ENDS HERE! -->
+
+  <!-- jQuery and javascript links (At very bottom). -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
